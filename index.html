@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="clock">
-            <div id="hour" style="--clr:#ff3d58; --h:72px;" class="hand"><i></i></div>
+            <div id="hour" style="--clr:#ff3d58; --h:68px;" class="hand"><i></i></div>
             <div id="min" style="--clr:#00a6ff; --h:84px;" class="hand"><i></i></div>
             <div id="sec" style="--clr:#ffffff; --h:94px;" class="hand"><i></i></div>
             
@@ -27,11 +27,14 @@
         <span style="--i:12;"><b>12</b></span>
       
         <div class="day-date" id="dayDate">Date</div>
-   
+        <div id="stopwatch" class="stopwatch">00:00:00</div>
     </div>
     </div>
-
-    <button id="speakTimeButton">Speak Time</button>
+    <div class="button-container">
+        <button id="speakTimeButton">Speak Time</button>
+        <button id="startStopwatchButton">Start Stopwatch</button>
+    </div>
+    
     
 
     <script src="index.js"></script>

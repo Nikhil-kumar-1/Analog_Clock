@@ -64,9 +64,6 @@ background-color: #fff;
 }
 
 .day-date {
-    background-color:#212121;
-    padding: 5px;
-    border-radius: 3px;
     position: absolute;
     bottom: 43px;
     color:#CCCCCC;;
@@ -74,19 +71,36 @@ background-color: #fff;
     transform: translateX(-50%);
     font-size: 15px;
 }
-#speakTimeButton {
+/* Add this to your existing <style> tag */
+.button-container {
     position: absolute;
-    bottom: 60px; /* Adjust the value as needed */
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    display: flex;
+    gap: 10px;
 }
 
-#speakTimeButton:hover {
-    background-color: #0056b3;
+#speakTimeButton, #startStopwatchButton {
+    background-color: #0077c2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
+
+#speakTimeButton:hover, #startStopwatchButton:hover {
+    background-color: #005ea0;
+}
+.stopwatch {
+    position: absolute;
+    bottom: 228px; /* Adjust the position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #0077c2; /* Change the color as needed */
+}
+
+
