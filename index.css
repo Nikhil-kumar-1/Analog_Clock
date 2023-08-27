@@ -71,7 +71,7 @@ background-color: #fff;
     transform: translateX(-50%);
     font-size: 15px;
 }
-/* Add this to your existing <style> tag */
+
 .button-container {
     position: absolute;
     bottom: 50px;
